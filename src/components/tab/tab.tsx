@@ -9,9 +9,9 @@ interface TTab {
 
 export const Tab = ({ content, count, isActive, setIsActive }: TTab) => {
   return (
-    <div
+    <button
       className={`${styles.tab} ${isActive && styles["tab-active"]}`}
       onClick={setIsActive}
-    >{`${content} (${count})`}</div>
+    >{`${content} (${count})`}</button>
   );
 };
